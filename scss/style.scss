@@ -1,0 +1,49 @@
+@import "./navbar/navbar";
+@import "./hero/hero";
+@import "./boxes/boxes";
+@import "./cards/cards";
+@import "./button/button";
+@import "./footer/footer";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6f6f6;
+  font-family: open sans;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Media Query Mixin's
+
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1330px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

@@ -1,0 +1,36 @@
+.button {
+  width: 12%;
+  height: 3vw;
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  cursor: pointer;
+  background: rgb(22, 69, 78);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 69, 78, 1) 0%,
+    rgba(23, 77, 88, 1) 27%,
+    rgba(12, 93, 110, 1) 56%,
+    rgba(55, 152, 171, 1) 100%,
+    rgba(8, 80, 94, 1) 100%
+  );
+  .btn-txt {
+    color: #ffffff;
+  }
+  &:hover {
+    background: #3798ab;
+    transition: ease-out 0.1s;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1440px) {
+  .button {
+    width: 12vw;
+    height: 3vw;
+    .btn-txt {
+      font-size: 0.8em;
+    }
+  }
+}
